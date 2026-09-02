@@ -1,0 +1,20 @@
+name = "dekont-upload"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[[r2_buckets]]
+binding = "DEKONT_BUCKET"
+bucket_name = "dekontlar"
+
+[vars]
+# R2 public URL (Cloudflare dashboard'dan alınacak)
+# Örn: https://pub-abc123def456.r2.dev veya custom domain
+R2_PUBLIC_URL = "https://pub-831e3718176c4bf49ca6c49daa0bc347.r2.dev"
+
+# Yüz yüze katılım kontenjanı (değiştirilebilir)
+IN_PERSON_CAPACITY = "200"
+
+# /reset endpoint'i için admin secret (güçlü bir değer girin)
+# ADMIN_SECRET'ı production'da secret olarak ayarlayın:
+#   wrangler secret put ADMIN_SECRET
+ADMIN_SECRET = "change-this-to-a-strong-secret"
