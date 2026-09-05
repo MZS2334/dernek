@@ -9,7 +9,7 @@ import { useLanguage } from "@/lib/i18n";
 
 const mainLinkKeys = [
   { href: "/egitim", key: "nav.egitim" },
-  { href: "/kaydol", key: "nav.kaydol" },
+  { href: "/sempozyum", key: "nav.kaydol" },
 ] as const;
 
 const dropdownLinkKeys = [

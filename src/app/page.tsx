@@ -52,7 +52,7 @@ const values = [
 const pages = [
   { href: "/hakkimizda", icon: Users, titleKey: "home.explore.hakkimizdaTitle", descKey: "home.explore.hakkimizdaDesc" },
   { href: "/egitim", icon: BookOpen, titleKey: "home.explore.egitimTitle", descKey: "home.explore.egitimDesc" },
-  { href: "/kaydol", icon: Sparkles, titleKey: "home.explore.sempozyumTitle", descKey: "home.explore.sempozyumDesc" },
+  { href: "/sempozyum", icon: Sparkles, titleKey: "home.explore.sempozyumTitle", descKey: "home.explore.sempozyumDesc" },
   { href: "/galeri", icon: ImageIcon, titleKey: "home.explore.galeriTitle", descKey: "home.explore.galeriDesc" },
   { href: "/makaleler", icon: FileText, titleKey: "home.explore.makalelerTitle", descKey: "home.explore.makalelerDesc" },
   { href: "/etkinlikler", icon: Calendar, titleKey: "home.explore.etkinliklerTitle", descKey: "home.explore.etkinliklerDesc" },

@@ -53,7 +53,7 @@ export default function Footer() {
                   href="/sempozyum"
                   className="text-sm text-cream-200/80 hover:text-cream-50 transition-colors"
                 >
-                  {t("nav.sempozyum")}
+                  {t("nav.kaydol")}
                 </Link>
               </li>
               <li>

@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/hakkimizda",
     "/egitim",
-    "/kaydol",
+    "/sempozyum",
     "/galeri",
     "/makaleler",
     "/etkinlikler",
@@ -19,6 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}${route}`,
     lastModified: now,
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1.0 : route === "/kaydol" ? 0.9 : 0.7,
+    priority: route === "" ? 1.0 : route === "/sempozyum" ? 0.9 : 0.7,
   }));
 }
