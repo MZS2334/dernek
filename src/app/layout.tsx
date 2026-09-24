@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const SITE_URL = "https://beslenmepsikolojisi.org.tr";
+const SITE_URL = "https://www.beslenmepsikolojisiderneği.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -119,6 +119,14 @@ const jsonLd = {
   ],
 };
 
+const jsonLdWebsite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Beslenme Psikolojisi Derneği",
+  alternateName: ["BPD", "Beslenme Psikolojisi"],
+  url: SITE_URL,
+};
+
 const jsonLdEvent = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -191,6 +199,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebsite) }}
         />
         <script
           type="application/ld+json"
