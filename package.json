@@ -2,9 +2,6 @@
   "name": "beslenme-psikolojisi-dernegi",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=22"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,7 +14,6 @@
     "react-dom": "^18.3.1",
     "lucide-react": "^0.400.0",
     "react-pdf": "^9.2.1",
-    "pdfjs-dist": "^4.4.168",
     "framer-motion": "^11.3.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.4.0",
