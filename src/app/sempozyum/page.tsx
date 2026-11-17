@@ -1,11 +1,18 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import PageHeader from "@/components/PageHeader";
 import RegistrationForm from "@/components/RegistrationForm";
-import PdfPreview from "@/components/PdfPreview";
 import { Brain, Download, Heart, Leaf, Sparkles } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import sempozyumData from "@/data/sempozyum";
+
+const PdfPreview = dynamic(() => import("@/components/PdfPreview"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[560px] rounded-xl bg-cream-50 animate-pulse" />
+  ),
+});
 
 const iconMap: Record<string, typeof Brain> = {
   Brain,
