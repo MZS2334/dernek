@@ -58,6 +58,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/dergi"
+                  className="text-sm text-cream-200/80 hover:text-cream-50 transition-colors"
+                >
+                  {t("nav.dergi")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/galeri"
                   className="text-sm text-cream-200/80 hover:text-cream-50 transition-colors"
                 >

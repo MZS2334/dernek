@@ -13,6 +13,7 @@ const mainLinkKeys = [
 ] as const;
 
 const dropdownLinkKeys = [
+  { href: "/dergi", key: "nav.dergi" },
   { href: "/galeri", key: "nav.galeri" },
   { href: "/makaleler", key: "nav.makaleler" },
   { href: "/etkinlikler", key: "nav.etkinlikler" },

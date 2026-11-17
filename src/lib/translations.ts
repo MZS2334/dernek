@@ -18,8 +18,29 @@ export const translations = {
     etkinlikler: { tr: "Etkinlikler", en: "Events" },
     iletisim: { tr: "İletişim", en: "Contact" },
     kesfet: { tr: "Keşfet", en: "Explore" },
+    dergi: { tr: "Dergi", en: "Journal" },
     kaydol: { tr: "Beslenme Psikolojisi Sempozyumu", en: "Nutritional Psychology Symposium" },
     menu: { tr: "Menü", en: "Menu" },
+  },
+
+  pdf: {
+    previewLoading: { tr: "Önizleme yükleniyor…", en: "Loading preview…" },
+    previewError: { tr: "Önizleme yüklenemedi", en: "Preview failed to load" },
+  },
+
+  dergiPage: {
+    title: { tr: "Beslenme Psikolojisi Dergisi", en: "Journal of Nutrition Psychology" },
+    subtitle: {
+      tr: "Derneğimizin yayınladığı dergiyi inceleyebilir veya indirebilirsiniz.",
+      en: "You can review or download the journal published by our association.",
+    },
+    issueBadge: { tr: "Sayı 1", en: "Issue 1" },
+    issueTitle: { tr: "Beslenme Psikolojisi Dergisi — 1. Sayı", en: "Journal of Nutrition Psychology — Issue 1" },
+    issueDesc: {
+      tr: "Dergi sayfaları arasında gezinerek inceleyebilir veya tamamını cihazınıza indirebilirsiniz.",
+      en: "You can browse through the journal pages or download the full issue to your device.",
+    },
+    downloadButton: { tr: "Dergiyi İndir (PDF)", en: "Download Journal (PDF)" },
   },
 
   kaydolPage: {
@@ -33,6 +54,13 @@ export const translations = {
       en: "The Body and Nutrition Compassion Symposium, organized by the Nutritional Psychology Association, aims to approach nutrition not only through behaviors but with a holistic perspective that understands the body, emotions, and the person. The two-day symposium will feature talks by experts on the first day and experience-based workshops on the second day. We come together to approach the body, nutrition, and the person with compassion.",
     },
     formTitle: { tr: "Kaydol", en: "Sign Up" },
+    posterBadge: { tr: "Afiş", en: "Poster" },
+    posterTitle: { tr: "Sempozyum Afişi", en: "Symposium Poster" },
+    posterDesc: {
+      tr: "Sempozyum afişini buradan inceleyebilir veya cihazınıza indirebilirsiniz.",
+      en: "You can view the symposium poster here or download it to your device.",
+    },
+    posterDownload: { tr: "Afişi İndir", en: "Download Poster" },
     pricingTitle: { tr: "Sempozyum Kayıt Ücretleri", en: "Symposium Registration Fees" },
     pricingSubtitle: {
       tr: "Katılımcılarımızı özel standart ve erken kayıt seçenekleri",

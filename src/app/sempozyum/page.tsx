@@ -2,7 +2,8 @@
 
 import PageHeader from "@/components/PageHeader";
 import RegistrationForm from "@/components/RegistrationForm";
-import { Brain, Heart, Leaf, Sparkles } from "lucide-react";
+import PdfPreview from "@/components/PdfPreview";
+import { Brain, Download, Heart, Leaf, Sparkles } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 import sempozyumData from "@/data/sempozyum";
 
@@ -149,6 +150,37 @@ export default function KaydolPage() {
               <p className="text-sm font-semibold text-sage-600">
                 {t("kaydolPage.pricingEarlyDate")}
               </p>
+            </div>
+          </div>
+
+          {/* Poster Preview */}
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="rounded-2xl border border-sage-100 bg-white/70 shadow-sm overflow-hidden">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-6 border-b border-sage-100">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage-100 text-sage-600 text-xs font-medium mb-2">
+                    <Sparkles className="w-3.5 h-3.5" />
+                    {t("kaydolPage.posterBadge")}
+                  </div>
+                  <h2 className="text-xl font-serif font-bold text-sage-700">
+                    {t("kaydolPage.posterTitle")}
+                  </h2>
+                  <p className="text-sm text-sage-500 mt-1">
+                    {t("kaydolPage.posterDesc")}
+                  </p>
+                </div>
+                <a
+                  href="/sempozyum-afisi.pdf"
+                  download="Sempozyum-Afisi.pdf"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-sage-600 text-cream-50 text-sm font-medium hover:bg-sage-700 transition-colors flex-shrink-0"
+                >
+                  <Download className="w-4 h-4" />
+                  {t("kaydolPage.posterDownload")}
+                </a>
+              </div>
+              <div className="bg-white p-6 flex justify-center">
+                <PdfPreview file="/sempozyum-afisi.pdf" height={560} />
+              </div>
             </div>
           </div>
 
